@@ -1,0 +1,19 @@
+<h1>Listado de Heroes</h1>
+<mat-divider></mat-divider>
+<br>
+<!-- fxLayout.xs, cambia a una columna, cuando la ventana se reduce a lo más chiquito-->
+<!--fxLayoutGap: Es la separación entre las tarjetas-->
+<div fxLayout="row wrap"
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="20px">
+     <!--lg, significa long, cuanto quedremos que ocupe en la ventana cuando está completa, lo más largo-->
+     <!--sm, es small, cuato queemos que esté cada tarjeta cuando está más chiquita la vntana-->
+    <div fxFlex="20" 
+         fxFlex.lg="15"
+         fxFlex.sm="30"
+         *ngFor="let heroe of heroes"         
+         >
+       <app-heroes-tarjeta [heroe]="heroe"></app-heroes-tarjeta>
+    </div>
+</div>

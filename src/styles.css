@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* el spacer se encarga de tomar to el espacio restante y empujarlo hacia los bordes*/
+.spacer{
+    flex: 1 1 auto;
+}
